@@ -1,0 +1,291 @@
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+  
+  header{
+    position: relative;
+    padding: 0;
+    margin: 0;
+    width: 100%; /* Alterado para ocupar 100% da largura da tela */
+    height: 459px;
+    flex-shrink: 0;
+    box-sizing: border-box; /* Garante que a largura inclua a largura da borda */
+  }
+  
+  .header img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .home {
+    padding: 0;
+    margin: 0;
+    width: 100%; /* Alterado para ocupar 100% da largura da tela */
+    height: 459px;
+    flex-shrink: 0;
+    box-sizing: border-box; /* Garante que a largura inclua a largura da borda */
+    justify-content: center;
+    align-items: center; /* Centraliza verticalmente */
+    display: inline-flex;
+    gap: 16px;
+
+  }
+
+   .home img {
+    margin-left: initial; /* Move para a borda direita */
+
+}
+
+
+   .bloco {
+        flex: 1; /* Ocupa a largura disponível igualmente */
+        padding: 20px;
+        box-sizing: border-box;
+        display: block;
+        justify-content: center;
+        align-items: center;
+
+
+    }
+
+  .bloco img {
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura do bloco */
+    height: auto;
+    display: block;
+    margin-left: initial; /* Move para a borda direita */
+  }
+
+  .texto {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+  }
+
+  .paragrafo {
+    color: #23272A;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .section-2 {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    width: 100%; /* Alterado para ocupar 100% da largura da tela */
+    height: 459px;
+    flex-shrink: 0;
+    box-sizing: border-box; /* Garante que a largura inclua a largura da borda */
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+
+  }
+
+  .section-3 {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    width: 100%; /* Alterado para ocupar 100% da largura da tela */
+    height: 459px;
+    flex-shrink: 0;
+    box-sizing: border-box; /* Garante que a largura inclua a largura da borda */
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+
+  }
+
+  .section-4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+  }
+  
+  .section-4-container {
+    max-width: 100%;
+  }
+  
+  .section-4 img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Adicione um raio de borda para estilização opcional */
+  }
+  
+  .texto-final-section-4 {
+    top: 70%;
+    left: 50%;
+    color: #23272A;
+    font-family: fantasy;
+    font-size: 2em;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+  }
+  
+  .paragrafo-final-section-4 {
+    top: 70%;
+    left: 50%;
+    color: #23272A;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+  }
+  
+
+  .texto-final {
+    width: 608px;
+    color: #23272A;
+    text-align: center;
+    font-family: fantasy;
+    font-size: 2em; /* Ajuste conforme necessário */
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .paragrafo-final {
+    width: 802px;
+    color: #23272A;
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    
+  }
+
+  .footer {
+    display: flex;
+    width: 100%; /* Alterado para ocupar 100% da largura da tela */
+    height: 134px;
+    padding: 35px 0px 36px 0px;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box; /* Garante que a largura inclua a largura da borda */
+
+    flex-shrink: 0;
+    background: #23272A;
+  }
+
+  .texto-sobre-imagem,
+  .paragrafo-sobre-imagem {
+    color: #FFF;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .texto-sobre-imagem {
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 4vw; /* Tamanho da fonte responsivo em relação à largura da tela */
+    font-weight: 400;
+    line-height: normal;
+    top: 40%; /* Ajuste a posição conforme necessário */
+  }
+  
+  .paragrafo-sobre-imagem {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2vw; /* Tamanho da fonte responsivo em relação à largura da tela */
+    font-weight: 400;
+    line-height: normal;
+    top: 60%; /* Ajuste a posição conforme necessário */
+  }
+  
+  /* Adicione regras de mídia conforme necessário para tamanhos de tela menores */
+  @media (max-width: 575.98px) {
+    .texto-sobre-imagem {
+      font-size: 6vw;
+      top: 30%;
+    }
+  
+    .paragrafo-sobre-imagem {
+      font-size: 3vw;
+      top: 50%;
+    }
+  }
+  
+  /* Adicione regras de mídia conforme necessário para tamanhos de tela maiores */
+  @media (min-width: 1200px) {
+    .texto-sobre-imagem {
+      font-size: 40px; /* Defina um tamanho de fonte fixo para telas maiores */
+      top: 40%; /* Ajuste a posição conforme necessário */
+    }
+  
+    .paragrafo-sobre-imagem {
+      font-size: 16px; /* Defina um tamanho de fonte fixo para telas maiores */
+      top: 60%; /* Ajuste a posição conforme necessário */
+    }
+  }
+  
+
+  .btn-black,
+  .btn-white {
+    position: absolute;
+    width: 30vw; /* Reduzi o tamanho para evitar sobreposição */
+    height: 44px;
+    flex-shrink: 0;
+    border-radius: 28px;
+  }
+  
+  .btn-black {
+    color: #FFF;
+    background: #23272A;
+    top: 85%;
+    right: 10%; /* Ajuste a distância da borda direita conforme necessário */
+    transform: translate(0, -50%);
+  }
+  
+  .btn-white {
+    color: #23272A;
+    background: #FFF;
+    top: 85%;
+    left: 10%; /* Ajuste a distância da borda esquerda conforme necessário */
+    transform: translate(0, -50%);
+  }
+
+  /* Seu código CSS existente... */
+
+  @media (min-width: 992px) {
+	/* Estilos específicos para telas maiores (notebook e desktop) */
+}
+  
+  
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+
+	}
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}
+  
